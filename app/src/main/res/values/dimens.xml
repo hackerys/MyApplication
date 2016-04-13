@@ -1,6 +1,166 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
+
+<!-- Default screen margins, per the Android Design guidelines. -->
+<dimen name="activity_horizontal_margin">16dp</dimen>
+<dimen name="activity_vertical_margin">16dp</dimen>
+<dimen name="fab_margin">16dp</dimen>
+
+
+<dimen name="common_marginLeft">13dp</dimen>
+<dimen name="common_marginRight">13dp</dimen>
+<dimen name="common_Height">63dp</dimen>
+<dimen name="common_type_height">50dp</dimen>
+
+<dimen name="common_item_space">12dp</dimen>
+
+<item name="common_weight_left" format="float" type="dimen">1.2</item>
+<item name="common_weight_right" format="float" type="dimen">3</item>
+
+<dimen name="textSize">17sp</dimen>
+<dimen name="textSize19">19sp</dimen>
+<dimen name="textSize15">15sp</dimen>
+<dimen name="textSize13">13sp</dimen>
+<dimen name="textSizeBig">21sp</dimen>
+<dimen name="textSizeSmall">12sp</dimen>
+<dimen name="order_space">13dp</dimen>
+
+<!--屏幕的适配-->
+<dimen name="xx1">15sp</dimen>
+<dimen name="xx2">14sp</dimen>
+<dimen name="xx22">13sp</dimen>
+
+<dimen name="xx3">50dp</dimen>
+<dimen name="xx4">59dp</dimen>
+
+
+<dimen name="mleft_name">26dp</dimen>
+<dimen name="mlett_detail">15dp</dimen>
+
+<!--卖家版-->
+<!--字体规范-->
+<dimen name="common_text_size0">20sp</dimen>
+<dimen name="common_text_size1">18sp</dimen>
+<dimen name="common_text_size2">16sp</dimen>
+<dimen name="common_text_size30">15sp</dimen>
+<dimen name="common_text_size3">14sp</dimen>
+<dimen name="common_text_size4">12sp</dimen>
+<dimen name="text_30px">30px</dimen>
+<!--标注区域间距-->
+<dimen name="blue_padding">12dp</dimen>
+<dimen name="yellow_padding">8dp</dimen>
+
+<!--商品详情伪造header-->
+<dimen name="header_height">300dp</dimen>
+<!--与边框的距离-->
+<dimen name="border_interval_left">32px</dimen>
+<dimen name="border_interval_top">30px</dimen>
+
+<dimen name="slidingmenu_offset">60dp</dimen>
+<dimen name="shadow_width">5dp</dimen>
+<!-- 设置高度距离 -->
+<dimen name="height_1">1dp</dimen>
+<dimen name="height_2">2dp</dimen>
+<dimen name="height_3">3dp</dimen>
+<dimen name="height_5">5dp</dimen>
+<dimen name="height_6">6dp</dimen>
+<dimen name="height_7">7dp</dimen>
+<dimen name="height_8">8dp</dimen>
+<dimen name="height_10">10dp</dimen>
+<dimen name="height_12">12dp</dimen>
+<dimen name="height_15">15dp</dimen>
+<dimen name="height_20">20dp</dimen>
+<dimen name="height_22">22dp</dimen>
+<dimen name="height_25">25dp</dimen>
+<dimen name="height_30">30dp</dimen>
+<dimen name="height_32">32dp</dimen>
+<dimen name="height_35">35dp</dimen>
+<dimen name="height_36">36dp</dimen>
+<dimen name="height_40">40dp</dimen>
+<dimen name="height_45">45dp</dimen>
+<dimen name="height_48">48dp</dimen>
+<dimen name="height_50">50dp</dimen>
+<dimen name="height_60">60dp</dimen>
+<dimen name="height_70">70dp</dimen>
+<dimen name="height_80">80dp</dimen>
+<dimen name="height_100">100dp</dimen>
+<dimen name="height_200">200dp</dimen>
+<dimen name="height_120">120dp</dimen>
+<dimen name="height_140">140dp</dimen>
+<dimen name="height_250">250dp</dimen>
+<dimen name="height_300">300dp</dimen>
+<dimen name="height_431">431dp</dimen>
+<!-- 字体大小 -->
+<dimen name="text_large32">32sp</dimen>
+<dimen name="text_large30">30sp</dimen>
+<dimen name="text_large25">25sp</dimen>
+<dimen name="text_large20">20sp</dimen>
+<dimen name="text_middle18">18sp</dimen>
+<dimen name="text_middle17">17sp</dimen>
+<dimen name="text_middle16">16sp</dimen>
+<dimen name="text_middle15">15sp</dimen>
+<dimen name="text_middle14">14sp</dimen>
+<dimen name="text_small12">12sp</dimen>
+<dimen name="text_small10">10sp</dimen>
+
+
+<dimen name="indicator_right_padding">10dp</dimen>
+<dimen name="indicator_corner_radius">12dp</dimen>
+<dimen name="indicator_internal_padding">4dp</dimen>
+<dimen name="header_footer_left_right_padding">24dp</dimen>
+<dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+
+<dimen name="splash_rotation_radius">550dp</dimen>
+<dimen name="splash_circle_radius">6dp</dimen>
+<integer name="splash_rotation_duration">100</integer>
+<integer name="splash_duration">1200</integer>
+
+<!-- 信息首页数据参数配置-->
+<dimen name="info_height01">21dp</dimen>
+<dimen name="info_title_marginTop">13dp</dimen>
+
+<!--权重sum-->
+<integer name="weight_sum1">1</integer>
+<integer name="weight_sum2">2</integer>
+<integer name="weight_sum3">3</integer>
+<integer name="weight_sum4">4</integer>
+<integer name="weight_sum5">5</integer>
+<integer name="weight_sum6">6</integer>
+<integer name="weight_sum7">7</integer>
+<integer name="weight_sum8">8</integer>
+<integer name="weight_sum9">9</integer>
+<integer name="weight_sum10">10</integer>
+
+<!--权重单份-->
+<integer name="weight_num1">1</integer>
+<integer name="weight_num2">2</integer>
+<integer name="weight_num3">3</integer>
+<integer name="weight_num4">4</integer>
+<integer name="weight_num5">5</integer>
+<integer name="weight_num6">6</integer>
+<integer name="weight_num7">7</integer>
+<integer name="weight_num8">8</integer>
+<integer name="weight_num9">9</integer>
+<integer name="weight_num10">10</integer>
+<integer name="weight_num11">11</integer>
+<integer name="weight_num12">12</integer>
+<integer name="weight_num13">13</integer>
+<integer name="weight_num14">14</integer>
+<integer name="weight_num15">15</integer>
+<integer name="weight_num16">16</integer>
+<integer name="weight_num17">17</integer>
+<integer name="weight_num18">18</integer>
+<integer name="weight_num19">19</integer>
+<integer name="weight_num20">20</integer>
+
+<dimen name="submit_btn_height">55dp</dimen>
+<dimen name="bottom_btn_height">50dp</dimen>
+<dimen name="bottom_small_height">44dp</dimen>
+
+<!--drawablePadding-->
+<dimen name="drawablePadding">15dp</dimen>
+<!--卖家版商品预览-->
+<dimen name="height48">48dp</dimen>
+<dimen name="margin_size10">10dp</dimen>
 </resources>
+

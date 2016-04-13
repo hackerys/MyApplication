@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.jansen.myapplication.clip.ClipImageLayout
+        android:id="@+id/clip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_save"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/y32"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size2"
+        />
+</LinearLayout>

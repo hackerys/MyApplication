@@ -20,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".HotFix"
+            android:name=".ChooseImage"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -29,6 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".clip.ClipActivity"/>
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="570640dee0f55a6081000c84"/>
