@@ -13,6 +13,7 @@ public class AppInfo {
 
     public AppInfo(Context mContext) {
         this.mContext = mContext;
+        getAppInfo();
     }
 
     private void getAppInfo() {

@@ -6,6 +6,7 @@ import android.os.Environment;
 import android.util.Log;
 
 import com.jansen.myapplication.utils.FixBugManage;
+
 import org.xutils.DbManager;
 import org.xutils.x;
 
@@ -40,13 +41,15 @@ public class MyApplication extends Application implements DbManager.DbOpenListen
                 .setDbOpenListener(this)
                 .setDbUpgradeListener(this);
         //热修复初始化
-        mFixBugManage=new FixBugManage(this);
+        mFixBugManage = new FixBugManage(this);
         mFixBugManage.init("1");
         //加载hack.dex
         File patch = new File(
                 Environment.getExternalStorageDirectory(), "hack.jar");
         Log.e("file:", "" + patch.exists());
         mFixBugManage.addPatch(patch.getAbsolutePath());
+        //crashhandler
+        CrashHandler.getInstance().init(this);
     }
 
     @Override
