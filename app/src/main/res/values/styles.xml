@@ -1,17 +1,69 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowContentTransitions">true</item>-->
     </style>
+
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="ThemeActivity" parent="Theme.AppCompat.Light">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
-
+    <!--menu的样式-->
+    <style name="MyDialogStyleTop" parent= "android:Theme.Dialog" >
+        <item name= "android:windowAnimationStyle" >@style/AnimTop2 </item>
+        <item name= "android:windowFrame" > @null</item>
+        <!-- 边框 -->
+        <item name= "android:windowIsFloating" >true </item>
+        <!-- 是否浮现在 activity 之上-->
+        <item name= "android:windowIsTranslucent" >true </item>
+        <!-- 半透明 -->
+        <item name= "android:windowNoTitle" >true </item>
+        <!-- 无标题 -->
+        <item name= "android:windowBackground" >@android:color/transparent </item>
+        <!-- 背景透明 -->
+        <item name= "android:backgroundDimEnabled" >false </item>
+        <!-- 模糊 -->
+    </style>
+    <!--activity出现隐藏动画-->
+    <style name= "AnimTop2" parent= "@android:style/Animation" >
+        <item name= "android:windowEnterAnimation" >@anim/push_top_in2 </item>
+        <item name= "android:windowExitAnimation" >@anim/push_top_out2 </item>
+    </style>
+    <style name="transDialog" parent="android:Theme.Dialog">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name= "android:windowNoTitle" >true </item>
+        <item name= "android:windowAnimationStyle" >@style/Base.Animation.AppCompat.Dialog</item>
+    </style>
+    <!--自定义属性-->
+    <declare-styleable name="MyView">
+        <attr name="showTest" format="boolean"/>
+        <attr name="labelPosition" format="enum">
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
 </resources>

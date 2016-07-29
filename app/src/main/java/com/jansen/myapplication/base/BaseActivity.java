@@ -11,7 +11,7 @@ import org.xutils.x;
  * Created Jansen on 2016/3/28.
  */
 public abstract class BaseActivity extends FragmentActivity {
-    private MyApplication mApplication;
+    private MyApplication2 mApplication;
     public DbManager.DaoConfig daoConfig;
     public DbManager db;
 
@@ -19,7 +19,7 @@ public abstract class BaseActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         x.view().inject(this);
-        mApplication = (MyApplication) getApplication();
+        mApplication = (MyApplication2) getApplication();
         daoConfig = mApplication.getDaoConfig();
         db = x.getDb(daoConfig);
         initeData();

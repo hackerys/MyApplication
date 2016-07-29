@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <SurfaceView
+        android:id="@+id/sur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <SeekBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/container"/>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="play"/>
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="pause"/>
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="stop"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="reset"/>
+    </LinearLayout>
+</RelativeLayout>

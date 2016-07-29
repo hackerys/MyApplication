@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="打开"
+        />
+
+    <Button
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="phone"
+        />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="map"
+        />
+
+    <Button
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="web"
+        />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="send"
+        />
+
+    <Button
+        android:id="@+id/pick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="pick"
+        />
+
+    <Button
+        android:id="@+id/baterry"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="baterry"
+        />
+</LinearLayout>

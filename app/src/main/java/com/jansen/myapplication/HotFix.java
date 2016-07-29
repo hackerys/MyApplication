@@ -31,7 +31,6 @@ public class HotFix extends Activity {
         ButterKnife.bind(this);
     }
 
-
     @OnClick({R.id.fix, R.id.toast})
     public void onClick(View view) {
         switch (view.getId()) {
@@ -44,7 +43,6 @@ public class HotFix extends Activity {
                 break;
             case R.id.toast:
                 //Toast.makeText(HotFix.this, "bug", Toast.LENGTH_SHORT).show();
-                A.mark();
                 break;
         }
     }

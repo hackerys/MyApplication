@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="@integer/weight_num1"
+        android:gravity="center"
+        android:weightSum="@integer/weight_sum4">
+
+        <ImageView
+            android:id="@+id/mine_user_scanCode1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="@integer/weight_num3"
+            android:background="#ffffff"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+</LinearLayout>

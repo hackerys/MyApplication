@@ -1,8 +1,11 @@
 package com.jansen.myapplication.base;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Environment;
 import android.util.Log;
+
+import com.jansen.myapplication.RestartApp;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -81,8 +84,14 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
                 Log.e(TAG, "Error : ", e);
             }
         }
+
+        // 此处示例发生异常后，重新启动应用
+        Intent intent = new Intent(mContext, RestartApp.class);
+        // 如果<span style="background-color: rgb(255, 255, 255); ">没有NEW_TASK标识且</span>是UI线程抛的异常则界面卡死直到ANR
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        mContext.startActivity(intent);
         android.os.Process.killProcess(android.os.Process.myPid());
-        System.exit(10);
+/*        System.exit(10);*/
     }
 
     /**

@@ -11,28 +11,103 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/><!-- 读取通讯录权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/><!-- 写入通讯录权限 -->
     <application
-        android:name=".base.MyApplication"
+        android:name=".base.MyApplication2"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        >
         <activity
-            android:name=".IncrementActivity"
+            android:name=".activity_anim.MaterialActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".clip.ClipActivity"/>
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="570640dee0f55a6081000c84"/>
+
+        <activity android:name=".activity_anim.MaterialActivity2"
+            android:theme="@style/AppTheme"
+            />
+
+        <activity android:name=".activity_anim.ActivityAnim0"/>
+        <!--        <activity android:name=".ImageLoaderTest"/>
+                <meta-data
+                    android:name="UMENG_APPKEY"
+                    android:value="570640dee0f55a6081000c84"/>-->
+        <!--回退栈测试-->
+        <activity android:name=".BackStack.Activity1"/>
+
+        <activity
+            android:name=".BackStack.Activity2"
+            android:parentActivityName=".BackStack.Activity1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BackStack.Activity1"/>
+        </activity>
+
+
+        <activity
+            android:name=".BackStack.Activity3"
+            android:parentActivityName=".BackStack.Activity2"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BackStack.Activity2"/>
+        </activity>
+
+        <activity
+            android:name=".BackStack.Activity4"
+            android:parentActivityName=".BackStack.Activity3"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BackStack.Activity3"/>
+        </activity>
+        <activity
+            android:name=".dialogActivity.MenuActivity"
+            android:theme="@style/transDialog"
+            />
+        <activity
+            android:name=".themes.DiaActivity"
+            android:theme="@style/transDialog"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.myapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"/>
+        </provider>
+
+        <service android:name=".toast.ToastService"/>
+        <service
+            android:name=".Notify.PingService"
+            android:process="com.jansen.my"
+            />
+
+        <activity android:name=".activity_anim.ActivityAnim2"
+            android:theme="@style/ThemeActivity"
+            />
+        <activity android:name=".activity_anim.ActivityAnim1"
+                  android:theme="@style/ThemeActivity"
+            />
     </application>
 
 </manifest>
